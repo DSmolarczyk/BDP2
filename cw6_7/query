@@ -1,4 +1,0 @@
-CREATE INDEX idx_porto_ndvi2_rast_gist ON smolarczyk.porto_ndvi2
-USING gist (ST_ConvexHull(rast));
-
-SELECT AddRasterConstraints('smolarczyk'::name, 'porto_ndvi2'::name,'rast'::name);
